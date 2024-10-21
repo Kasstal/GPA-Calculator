@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/title_text_view_border"
+            android:padding="10dp"
+            android:text="Course name" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_weight="1"
+            android:background="@drawable/title_text_view_border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Grade" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/title_text_view_border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Credits" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="165dp"
+            android:text="Your gpa is :"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_gpa"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="165dp"
+            android:background="@drawable/title_text_view_border"
+            android:text=""
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btn_addItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItem"
+            android:text="Add new class" />
+
+    </LinearLayout>
+
+</ScrollView>

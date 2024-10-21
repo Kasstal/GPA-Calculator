@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/custom_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:weightSum="3"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Course name"
+            android:inputType="textCapWords"
+            android:textColor="#363A43"
+            android:textColorHint="#7a8089"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/custom_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        >
+    </Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/custom_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="#363A43"
+            android:textColorHint="#7a8089"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
